@@ -37,10 +37,10 @@
   }
 
   &[data-icon='apple-logo']::before {
-    background-image: url(./assets/icons/icon-apple.svg);
+    background-image: url(../assets/icons/icon-apple.svg);
   }
 
   &[data-icon='android-logo']::before {
-    background-image: url(./assets/icons/icon-android.svg);
+    background-image: url(../assets/icons/icon-android.svg);
   }
 }
