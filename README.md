@@ -15,12 +15,12 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](https://github.com/Dejmian11/12-Skilled-elearning-landing-page/blob/master/images/design/Screenshot%20-%20Frontend%20Mentor%20Skilled%20e-learning%20landing%20page.png)
+![](https://github.com/Dejmian11/Equalizer-landing-page/blob/master/assets/design/Screenshot%20-%20Frontend%20Mentor%20Equalizer%20landing%20page.png)
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-IVX5-U-qhR)
-- Live Site URL: [Live](https://rococo-gaufre-6645dc.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/equalizer-landing-page-build-with-sass-gor8vGsg80)
+- Live Site URL: [Live](https://astonishing-blini-a5dfb2.netlify.app/)
 
 ## My process
 
