@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+body {
+  background-color: var(--clr-neutral-800);
+  background-image: url(./assets/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 1.5rem -16rem;
+
+  @include respond(md) {
+    background-image: url(./assets/images/bg-pattern-1.svg),
+      url(./assets/images/bg-main-tablet.png);
+    background-position: top right, -25rem -16rem;
+    background-size: 16.162rem, 80rem;
+  }
+
+  @include respond(lg) {
+    background-image: url(./assets/images/bg-pattern-1.svg),
+      url(./assets/images/bg-main-desktop.png);
+    background-position: top right, -18rem -14rem;
+    background-size: 19.5rem, auto;
+  }
+}

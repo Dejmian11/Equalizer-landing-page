@@ -1,0 +1,91 @@
+@use '../abstracts/' as *;
+
+.product {
+  &__container {
+    --content-spacing: var(--su-xl);
+
+    display: grid;
+    justify-items: center;
+    gap: var(--content-spacing);
+    border-radius: 1rem;
+
+    position: relative;
+    background-color: var(--clr-neutral-200);
+    background-image: url(./assets/images/bg-pattern-2.svg);
+    background-position: center top;
+    background-size: 17.5rem;
+    background-repeat: no-repeat;
+
+    @include respond(md) {
+      padding-inline: 3.625rem;
+      min-height: 600px;
+      background-position: 14.25rem -2rem;
+    }
+
+    @include respond(xl) {
+      background-size: 312px;
+      background-position: 21rem -2.5rem;
+    }
+  }
+
+  &__img {
+    max-width: 209px;
+    margin-top: -6.125rem;
+
+    @include respond(md) {
+      position: absolute;
+      left: 4rem;
+      margin-top: -8.625rem;
+      max-width: 270px;
+    }
+
+    @include respond(xl) {
+      left: 6.375rem;
+      margin-top: -13.3125rem;
+      max-width: 312px;
+    }
+  }
+
+  &__content {
+    --content-padding: var(--su-xl) var(--su-900);
+    --content-spacing: var(--su-300);
+
+    display: grid;
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+    border-radius: 1rem;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-800);
+
+    @include respond(md) {
+      --content-padding: var(--su-xl);
+
+      position: absolute;
+      right: 3.625rem;
+      top: 9.375rem;
+      max-width: 399px;
+    }
+
+    @include respond(xl) {
+      --content-padding: 3.625rem 3.375rem var(--su-xl);
+
+      right: 5.9375rem;
+      top: 5.625rem;
+      max-width: 446px;
+    }
+  }
+
+  &__description {
+    font-size: var(--fs-500);
+
+    @include respond(xl) {
+      font-size: var(--fs-600);
+      padding-right: 0.5rem;
+    }
+  }
+
+  &-price {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+  }
+}

@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+
+// HERO SECTION //////////////////////////////////////////////////
+.hero-section {
+  padding-block: var(--su-600);
+
+  @include respond(md) {
+    padding-top: 2.1875rem;
+  }
+
+  @include respond(lg) {
+    padding-top: 4.0625rem;
+  }
+
+  &__content {
+    --content-spacing: var(--su-500);
+
+    display: grid;
+    gap: var(--content-spacing);
+
+    @include respond(md) {
+      --content-spacing: var(--su-700);
+      max-width: 32rem;
+    }
+
+    @include respond(lg) {
+      max-width: 40rem;
+    }
+
+    @include respond(xl) {
+      --content-spacing: var(--su-lg);
+      max-width: 53rem;
+    }
+  }
+}
+
+// PRODUCT SECTION ///////////////////////////////////////////////
+.product-section {
+  padding-top: 8.875rem;
+
+  @include respond(md) {
+    padding-block: 13.375rem 6rem;
+  }
+
+  @include respond(xl) {
+    padding-block: 17.5rem 4.9375rem;
+  }
+
+  & > .wrapper {
+    padding-inline: 0;
+  }
+}

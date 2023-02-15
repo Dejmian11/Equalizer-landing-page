@@ -1,0 +1,59 @@
+@use '../abstracts/' as *;
+
+.footer {
+  padding-block: 4rem 5rem;
+  font-size: var(--fs-footer);
+
+  @include respond(md) {
+    padding-block: 5.4375rem 5.3125rem;
+  }
+
+  @include respond(lg) {
+    padding-bottom: 5.6875rem;
+  }
+
+  &__container {
+    --content-spacing: var(--su-800);
+
+    display: grid;
+    gap: var(--content-spacing);
+    justify-items: start;
+
+    @include respond(md) {
+      grid-template-areas:
+        'logo .'
+        'description social-list';
+      gap: var(--su-800);
+    }
+
+    @include respond(lg) {
+      grid-template-areas: 'logo description social-list';
+      align-items: start;
+    }
+  }
+
+  & .logo {
+    @include respond(md) {
+      grid-area: logo;
+    }
+  }
+
+  &__description {
+    max-width: 23rem;
+
+    @include respond(md) {
+      grid-area: description;
+    }
+  }
+
+  & .social-list {
+    margin-top: var(--su-800);
+
+    @include respond(md) {
+      grid-area: social-list;
+      justify-self: end;
+      align-self: center;
+      margin-top: 0;
+    }
+  }
+}

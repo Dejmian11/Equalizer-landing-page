@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+
+    <script type="module" src="./main.js"></script>
+
+    <title>Frontend Mentor | Equalizer landing page</title>
+  </head>
+  <body>
+    <!-- ================ HEADER ================ -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__container">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="Equalizer" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================ HERO SECTION ================ -->
+      <section class="hero-section">
+        <div class="wrapper">
+          <div class="hero-section__content">
+            <h1 class="heading-primary">
+              We make your music sound extraordinary.
+            </h1>
+            <p class="description">
+              A system audio equalizer specifically designed for Android and
+              iOS. Freely tune the way your music sounds with a professional
+              grade parametric EQ & volume mixer. Control bass, mids, treble,
+              gain control, reverb, and more!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================ PRODUCT SECTION ================ -->
+      <section class="product-section">
+        <div class="wrapper">
+          <div class="product__container">
+            <img
+              src="./assets/images/illustration-app.png"
+              alt="Equalizer product"
+              class="product__img"
+            />
+
+            <article class="product__content">
+              <h2 class="heading-secondary">Premium EQ</h2>
+              <p class="product__description">
+                Get expert-level control with a robust equalizer, volume mixer,
+                and spatial audio. Take your listening experience to a whole new
+                level and access all our incredible features!
+              </p>
+              <div class="flex-group">
+                <p class="product-price">$4</p>
+                <p class="fs-600">/ month</p>
+              </div>
+              <div class="grid">
+                <button class="btn btn--dark" data-icon="apple-logo">
+                  iOS Download
+                </button>
+                <button class="btn" data-icon="android-logo">
+                  Android Download
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================ FOOTER ================ -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__container">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="Equalizer" />
+          </a>
+          <div class="footer__description">
+            <p class="footer-copyright">All rights reserved © Equalizer 2021</p>
+            <p>
+              Have any problems? Contact us via social media or email us at
+              <span class="fw-bold">equalizer@example.com</span>
+            </p>
+          </div>
+
+          <ul class="social-list" role="list">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                class="social-list__link"
+                aria-label="Facebook"
+                ><svg class="social-list__icon">
+                  <use
+                    xlink:href="assets/icons/sprite.svg#icon-icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                class="social-list__link"
+                aria-label="Instagram"
+                ><svg class="social-list__icon">
+                  <use
+                    xlink:href="assets/icons/sprite.svg#icon-icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/"
+                class="social-list__link"
+                aria-label="Twitter"
+                ><svg class="social-list__icon">
+                  <use
+                    xlink:href="assets/icons/sprite.svg#icon-icon-twitter"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
